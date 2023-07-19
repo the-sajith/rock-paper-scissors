@@ -41,11 +41,13 @@ let getGameStatus = (playerSelection, computerSelection) => {
 };
 
 function game() {
-  playRound("Rock", "Paper");
-  playRound("Paper", "Scissor");
-  playRound("Scissor", "Scissor");
-  playRound("Rock", "Paper");
-  playRound("Rock", "Paper");
+  const buttons = document.querySelectorAll("button");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      playRound(button.value, getComputerChoice());
+    });
+  });
 }
 
 game();
