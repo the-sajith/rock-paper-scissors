@@ -1,0 +1,93 @@
+body
+{
+    margin: 0px;
+}
+
+.fa,
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    align-items: center;
+}
+
+#score-card
+{
+font-size: 50px;
+font-family: monospace;
+font-weight: 300px;
+display: block;
+text-align: center;
+margin: 32px;
+padding: 16px;
+}
+
+
+
+#play-again
+{
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: #fff;
+    background: linear-gradient(135deg, rgb(102, 153, 255) 0%, rgb(255, 51, 102) 100%);
+    color: rgb(255, 255, 255);
+
+}
+
+.header {
+    font-size: 60px;
+    font-family: cursive;
+    text-align: center;
+    margin: 30px 50px;
+    /* padding: 10px; */
+}
+
+#score-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin: 16px;
+    padding: 16px;
+    flex-wrap: wrap;
+}
+
+.player-box
+{
+display: flex;
+flex-direction: column;
+gap: 12px;
+flex-wrap: wrap;
+ 
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    margin: 32px 0px 0px 0px;
+    background: #e5e7eb;
+    padding: 16px 32px;
+}

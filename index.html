@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html en="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
     <script src="./game.js" defer></script>
-</head>
+  </head>
 
-<body>
-    <div id="container">
-        <button value="Rock">Rock</button>
-        <button value="Paper">Paper</button>
-        <button value="Scissor">Scissor</button>
+  <body>
+    <div class="header">
+        ROCK PAPER SCISSORS
     </div>
-</body>
+    <div id="container">
+        
+      <button class="btn" value="Rock" disabled="true"><i class="fa fa-hand-rock fa-10x"></i></button>
+      <button class="btn" value="Paper" disabled="true"><i class="fa fa-hand-paper fa-10x" aria-hidden="true"></i></button>
+      <button class="btn" value="Scissor" disabled="true"><i class="fa fa-hand-scissors fa-10x" aria-hidden="true"></i></button>
+    </div>
 
+    </div>
+    <div id="score-container">
+    <div id ="score-card">
+        Score Card
+    </div>
+    <div id="score">
+        <div class="player-box"><i class="fa fa-user-secret fa-5x" aria-hidden="true"></i>
+          Your Score<p id="user-score"></p>
+        </div>
+        <div class="player-box">
+        <i class="fa fa-desktop fa-5x" aria-hidden="true"></i>
+          Computer Score<p id="computer-score"></p>
+        </div>
+    </div>
+    <p id="round-status"></p>
+        <div>
+          <button id="play-game" onclick="play()">Play Game</button>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+      Made with ❤️ by Sajith
+    </div>
+  </body>
 </html>
