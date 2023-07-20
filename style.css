@@ -9,6 +9,7 @@ body
     justify-content: center;
     gap: 48px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #score-card
